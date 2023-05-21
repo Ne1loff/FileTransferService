@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/fts
+    username: fts
+    password: fts
+  jpa.hibernate:
+      ddl-auto: none
+  flyway:
+    fail-on-missing-locations: true
+
+app:
+  minio:
+    endpoint: http://127.0.0.1:9000
+    accessKey: miniofts
+    secretKey: miniofts
